@@ -1,10 +1,17 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        nums_dict={}
-        if len(nums)==2:
-            return [0,1]
-        for i in range(len(nums)):
-            if nums_dict.get(target-nums[i])!=None:
-                return [nums_dict.get(target-nums[i]),i];
+        
+        # Psuedocode
+            # Create a empty hashmap 
+            # check target-current_ele is exist in hashmap or not
+            # if exist - return current index & hashmap key's value
+            # else add current ele as key & its index as value
+        
+        hsh={}
+        for index,ele in enumerate(arr):
+            r = target-ele
+            if hsh.get(r) != None:
+                print([hsh.get(r),index])
+                break;
             else:
-                nums_dict[nums[i]]=i;
+                hsh[ele]=index
