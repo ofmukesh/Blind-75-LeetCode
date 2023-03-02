@@ -1,10 +1,18 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        min_price=prices[0];
-        profit=0;
+        buy_price=prices[0];
+        max_profit=0;
 
-        for curr_price in prices:
-            min_price=min(min_price,curr_price);
-            profit=max(profit,curr_price-min_price);
-
+        for price in prices:
+            buy_price=min(buy_price,price);
+            max_profit=max(max_profit,price-buy_price);
+            
         return profit;
+
+    
+# Psuedocode
+# Intialize two variables that contain buy price and max profit
+# check stock price - each day -> 
+#     store current price in buy_price if current price < previous buy price 
+#     else store profit in max_profit if profitable then max_profit
+# return max_profit
