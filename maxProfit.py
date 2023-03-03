@@ -16,3 +16,4 @@ class Solution:
 #     store current price in buy_price if current price < previous buy price 
 #     else store profit in max_profit if profitable then max_profit
 # return max_profit
+
