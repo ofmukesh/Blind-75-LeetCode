@@ -7,6 +7,7 @@ class Solution:
             return -1
         while l <= r:
             mid=int((l+r)/2);
+            # if mid element is the target return simply its index
             if nums[mid] == target:
                 return mid;
             elif nums[l]<=nums[mid]:
