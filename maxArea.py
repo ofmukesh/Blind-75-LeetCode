@@ -12,3 +12,10 @@ class Solution:
             else:
                 r-=1;
         return res;
+
+# Explain : We will use index pointing method , Simply we will move left and right index pointer and find the maximum area
+# loop while left is smaller then right index -> find out the area
+#                                             -> set ans var to max of (area | itself) [ ^_^ area = width * hieght = (right-left) * min(left ele,right ele) ]
+#                                             -> if left index ele < right index ele then move left index to next (+1)
+#                                             -> or if right index ele < left index ele then move right index to -1
+# after loop return the answer
