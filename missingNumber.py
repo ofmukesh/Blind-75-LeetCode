@@ -1,5 +1,6 @@
 
 #-------------------------Explainaion-------------------------
+# get the expection sum and real sum -> substract them
 # get the sum of the elements 0 to n & the sum of given array 
 # the ans is sum(0 to n) - sum(given array)
 
