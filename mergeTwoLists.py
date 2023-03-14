@@ -5,7 +5,7 @@
 #         self.next = next
 
 
-# creating a merged linkedlist of l1 and l2 linkedlist , if current node of l1 is smaller than l2 -> add l1 node to new list
+# creating a merged linkedlist of l1 and l2 linkedlist , if current node of l1 is smaller than l2 -> add l1 node to new merged list
 # or if current l2 node is smaller or equal to current l1 node then add l2 node to new merged linked list
 # if l1 has no val then add remaining l2 nodes to new list
 # or if l2 has no val then add remaining l1 nodes to new list
